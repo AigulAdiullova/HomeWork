@@ -1,6 +1,8 @@
+package Lesson_2;
+
 public class Lesson_2 {
     public static void main(String[] args) {
-    Employee human= new Employee("Adiullova Aigul Renatovna","trainee","adiullova@mail.ru",89999999,100000,30);
+        Employee human = new Employee("Adiullova Aigul Renatovna", "trainee", "adiullova@mail.ru", 89999999, 100000, 30);
         System.out.println("\nЗадание 1.");
         human.printInfo();
 

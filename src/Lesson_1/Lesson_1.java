@@ -1,10 +1,12 @@
+package Lesson_1;
+
 public class Lesson_1 {
     public static void main(String[] args) {
         printThreeWords(); //Задание 1.
         checkSumSign(); //Задание 2.
         printCol(); //Задание 3.
         compareNumbers();//Задание 4.
-        boolean temp = check(7,8); //Задание 5.
+        boolean temp = check(7, 8); //Задание 5.
         System.out.println(temp);
         checkPositiveNegative(9); //Задание 6.
         boolean t =returnTrueFalse(-17); //Задание 7.
@@ -46,6 +48,7 @@ public class Lesson_1 {
             System.out.println("Желтый");
         else if (value > 100) System.out.println("Зеленый");
     }
+
     private static void compareNumbers() {
         System.out.println("\nЗадание 4.");
         int a = 15;
@@ -54,11 +57,13 @@ public class Lesson_1 {
         else System.out.println("a<b");
 
     }
+
     private static boolean check(int a, int b) {
         System.out.println("\nЗадание 5.");
         int с = a + b;
         return (10 <= с) && (с <= 20);
     }
+
     private static void checkPositiveNegative(int c) {
         System.out.println("\nЗадание 6.");
         if (c >= 0) System.out.println("положительное");
@@ -70,11 +75,13 @@ public class Lesson_1 {
         if (d < 0) return true;
         return false;
     }
+
     private static void printWord(String str, int n){
         System.out.println("\nЗадание 8.");
         for (int i = 1; i <= n; i++)
             System.out.println("[" + i + "]" + str);
     }
+
     private static boolean checkLeapYear (int year){
         System.out.println("\nЗадание 9.");
         if (year % 400 == 0) return true;
@@ -106,6 +113,7 @@ public class Lesson_1 {
             System.out.print (replacedigit[i]+" ");
         }
     }
+
     private static void diagonal(int x, int y) {
         System.out.println("\n\nЗадание 13.");
         int[][] arr = new int[x][y];
@@ -120,8 +128,10 @@ public class Lesson_1 {
             System.out.println();
         }
     }
+
     private static void task() {
-    System.out.println("\nЗадание 14.");}
+        System.out.println("\nЗадание 14.");}
+
     private static int[] retLenArr (int len, int initialValue){
         int arr[] = new int[len];
         for (int i = 0; i < arr.length; i++){
@@ -129,6 +139,7 @@ public class Lesson_1 {
         }
         return arr;
     }
+
     private static void printArrayInConsole(int[] inputArray) {
         for (int i = 0; i < inputArray.length; i++) {
             System.out.print(inputArray[i] + " ");

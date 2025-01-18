@@ -1,14 +1,18 @@
+package Lesson_2;
+
 public class Park {
     private String name;
+
     public Park(String name) {
-        this.name = name;}
+        this.name = name;
+    }
 
     public static void main(String[] args) {
         System.out.println("\nЗадание 3.");
-        Park park = new Park("Park");
+        Park park = new Park("Lesson_2.Park");
         Attraction attractionOne = park.new Attraction("Attraction1", "10:00 - 14:00", 20);
         attractionOne.printInfo();}
-    
+
     public class Attraction {
         private String attractionName;
         private String workingHours;
@@ -19,6 +23,7 @@ public class Park {
             this.workingHours = workingHours;
             this.cost = cost;
         }
+
         public void printInfo() {
             System.out.println("Attraction Name: " + attractionName);
             System.out.println("Working Hours: " + workingHours);
